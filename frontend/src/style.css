@@ -1,0 +1,31 @@
+/* 🔸 Kartice (forme) bez blur efekta */
+.v-card {
+  background: rgba(255, 255, 255, 0.1) !important; /* lagano prozirno */
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  color: white !important;
+}
+
+/* 🔸 Dugmad bez blur efekta */
+.glass-btn {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 6px 16px;
+  border-radius: 8px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+/* Ukloni blur globalno */
+* {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.glass-btn:hover {
+  background: rgba(255, 255, 255, 0.25) !important;
+  transform: scale(1.05);
+}
